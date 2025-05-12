@@ -1,0 +1,3 @@
+{"timestamp":"2025-05-12T11:41:13.375Z","level":"info","moduleName":"Bootstrap","pid":20680,"message":"Hub start : SecondAppInstance"}
+{"timestamp":"2025-05-12T11:41:13.388Z","level":"info","moduleName":"secondAppInstanceBootstrap","pid":20680,"message":"Second instance of the Hub was started. Closing..."}
+{"timestamp":"2025-05-12T11:45:58.569Z","level":"info","moduleName":"Bootstrap","pid":7920,"message":"Hub start : SecondAppInstance"}
