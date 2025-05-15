@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Anni/SplashScene.unity
     guid: 44d384f5c0f22524f827060c10ffbcef
   - enabled: 1
-    path: Assets/Scenes/Anni/MenuScene.unity
+    path: Assets/Scenes/Anni/Menu Scene.unity
     guid: af59a8015ea501e4ca6d2bae369294fc
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed69b5949cd376e498eb324fb01e5661, type: 2}
