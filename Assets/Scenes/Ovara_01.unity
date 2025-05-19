@@ -2307,7 +2307,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4914852921997233909, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
       propertyPath: m_Name
-      value: Environment - Ina (1)
+      value: Sport2 - Deepa
       objectReference: {fileID: 0}
     - target: {fileID: 7128213599024437146, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
       propertyPath: m_LocalScale.x
@@ -16109,7 +16109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4914852921997233909, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
       propertyPath: m_Name
-      value: Environment - Ina (2)
+      value: Spot3 - Ina
       objectReference: {fileID: 0}
     - target: {fileID: 7128213599024437146, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
       propertyPath: m_LocalScale.x
@@ -22729,19 +22729,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4914852921997233909, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
       propertyPath: m_Name
-      value: Environment - Ina
-      objectReference: {fileID: 0}
-    - target: {fileID: 7128213599024437146, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 196.14233
-      objectReference: {fileID: 0}
-    - target: {fileID: 7128213599024437146, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.8851595
-      objectReference: {fileID: 0}
-    - target: {fileID: 7128213599024437146, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 218.00084
+      value: Spot1 - Ina
       objectReference: {fileID: 0}
     - target: {fileID: 9006616902994408619, guid: 629122fb55002984d86c10f9a8c2d094, type: 3}
       propertyPath: m_LocalPosition.x
