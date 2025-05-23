@@ -3,21 +3,24 @@ using UnityEngine;
 
 public class StartButtonTeleport : MonoBehaviour
 {
-    public Transform trackingSpace;   // <- Assign [BuildingBlock] Camera Rig → TrackingSpace
-    public Transform targetSpot;      // <- Assign Spot 1
+    public Transform trackingSpace;   // Assign: TrackingSpace
+    public Transform targetSpot;      // Assign: Spot 1
+    public GameObject menuCanvas;     // Assign: the UI Canvas with all buttons
 
     public void MoveToSpotOne()
     {
-        Debug.Log("Teleport triggered");
+        Debug.Log("Start button clicked");
 
         if (trackingSpace != null && targetSpot != null)
         {
             trackingSpace.position = targetSpot.position;
             Debug.Log("Teleported to Spot 1");
         }
-        else
+
+        if (menuCanvas != null)
         {
-            Debug.LogWarning("Missing trackingSpace or targetSpot");
+            menuCanvas.SetActive(false); // Hide menu
+            Debug.Log("Menu hidden");
         }
     }
 }

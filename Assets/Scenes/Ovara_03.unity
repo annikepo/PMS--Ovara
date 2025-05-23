@@ -33888,6 +33888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackingSpace: {fileID: 1031539232}
   targetSpot: {fileID: 1083142743}
+  menuCanvas: {fileID: 1845065526}
 --- !u!4 &1973567338
 Transform:
   m_ObjectHideFlags: 0
