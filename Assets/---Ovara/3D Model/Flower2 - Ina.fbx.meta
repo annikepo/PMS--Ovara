@@ -19,6 +19,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Stem
     second: {fileID: 2100000, guid: a31130aa87d176541b6026017d47fb87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass
+    second: {fileID: 2100000, guid: 5ed5f22b791c9d84fa5046b1cc682bea, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
