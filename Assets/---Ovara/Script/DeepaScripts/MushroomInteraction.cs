@@ -5,8 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class MushroomInteraction : MonoBehaviour
 {
     public Color nearColor = Color.blue;
-    public Color farColor = Color.red;
-    public float detectionRange = 3f;
+    public Color farColor = new Color(0.82f, 0.71f, 0.55f); // Tan color
+    public float detectionRange = 6f;
     private Renderer mushroomRenderer;
     private Transform player;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
@@ -41,3 +41,4 @@ public class MushroomInteraction : MonoBehaviour
         Destroy(gameObject); // Makes the mushroom disappear when picked
     }
 }
+
