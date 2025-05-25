@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 907d12f121e55cf4da78a938d52ea910
+guid: 1aba0cb13d3c7574c8141c4a15b0f371
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,23 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Leaf
-    second: {fileID: 2100000, guid: f8ec42ffbe98e03498d992e0eafae5f5, type: 2}
+      name: Mf_Grass
+    second: {fileID: 2100000, guid: 97e15758e6329334fa1e37e3d2acd581, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Petal
-    second: {fileID: 2100000, guid: 1b44a04a0f6cf6f4e8fa7232aeac1e47, type: 2}
+      name: Mf_Leaf
+    second: {fileID: 2100000, guid: 61ea9d3a71b93f440a935092ed534759, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Stem
-    second: {fileID: 2100000, guid: a31130aa87d176541b6026017d47fb87, type: 2}
+      name: Mf_Petal
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: grass
-    second: {fileID: 2100000, guid: 5ed5f22b791c9d84fa5046b1cc682bea, type: 2}
+      name: Mf_Stem
+    second: {fileID: 2100000, guid: 612b6219850e1004b915694bff9eb0f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mf_Stigma
+    second: {fileID: 2100000, guid: 7e790b680a8f3a04d82af8853bfe19ca, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -50,7 +55,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
