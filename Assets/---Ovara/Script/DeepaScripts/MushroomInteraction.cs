@@ -11,10 +11,11 @@ public class MushroomInteraction : MonoBehaviour
     private Transform player;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
+
     void Start()
     {
         // Set up renderer for color change
-        mushroomRenderer = GetComponent<Renderer>();
+        mushroomRenderer = GetComponentInChildren<Renderer>();
         player = Camera.main.transform; // Assuming first-person player
 
         // Set up grab interaction
