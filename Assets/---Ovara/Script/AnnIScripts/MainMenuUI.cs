@@ -9,57 +9,63 @@ public class MainMenuUI : MonoBehaviour
     public GameObject recommendationPanel;
 
     [Header("XR Teleport Targets")]
-    public Transform trackingSpace; // Usually your XR rig or XR Origin
-    public Transform spot1; // Forest
-    public Transform spot2; // Beach
-    public Transform spot3; // Island
+    public Transform trackingSpace; // XR Origin / XR Rig parent object
+    public Transform spot1;         // AmazingForest
+    public Transform spot2;         // GlowingMushroom
+    public Transform spot3;         // IslandInTheNight
 
-    // Called by Start button
+    // Called by the Start button
     public void StartGame()
     {
-        mainMenuPanel.SetActive(false);
-        checkInPanel.SetActive(true);
+        Debug.Log("Start button pressed");
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
+        if (checkInPanel != null) checkInPanel.SetActive(true);
     }
 
-    // Called by Emotion buttons (Irritable, etc.)
+    // Called by emotion buttons (Irritable, Unstable, etc.)
     public void OnEmotionSelected(string emotion)
     {
         Debug.Log("Selected Emotion: " + emotion);
-        checkInPanel.SetActive(false);
-        recommendationPanel.SetActive(true);
-        PlayerPrefs.SetString("Emotion", emotion); // optional
+        if (checkInPanel != null) checkInPanel.SetActive(false);
+        if (recommendationPanel != null) recommendationPanel.SetActive(true);
+        PlayerPrefs.SetString("SelectedEmotion", emotion); // optional memory
     }
 
-    // Called by Location buttons (Forest, Beach, Island)
+    // Called by location buttons
     public void OnRecommendationSelected(string location)
     {
         Debug.Log("Selected Location: " + location);
-        recommendationPanel.SetActive(false);
+        if (recommendationPanel != null) recommendationPanel.SetActive(false);
 
         switch (location)
         {
-            case "Forest":
+            case "AmazingForest":
                 TeleportTo(spot1);
                 break;
-            case "Beach":
+            case "GlowingMushroom":
                 TeleportTo(spot2);
                 break;
-            case "Island":
+            case "IslandInTheNight":
                 TeleportTo(spot3);
+                break;
+            default:
+                Debug.LogWarning("Unknown location string: " + location);
                 break;
         }
     }
 
+    // Handles the teleportation
     void TeleportTo(Transform target)
     {
         if (trackingSpace != null && target != null)
         {
             trackingSpace.position = target.position;
             trackingSpace.rotation = target.rotation;
+            Debug.Log("Teleported to: " + target.name);
         }
         else
         {
-            Debug.LogWarning("Teleport target or tracking space is missing!");
+            Debug.LogWarning("Teleport failed: Missing trackingSpace or target transform");
         }
     }
 }
