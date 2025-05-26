@@ -9,12 +9,12 @@ public class MainMenuUI : MonoBehaviour
     public GameObject recommendationPanel;
 
     [Header("XR Teleport Targets")]
-    public Transform trackingSpace; // XR Origin / XR Rig parent object
-    public Transform spot1;         // AmazingForest
-    public Transform spot2;         // GlowingMushroom
-    public Transform spot3;         // IslandInTheNight
+    public Transform trackingSpace;   // XR Origin or XR Rig
+    public Transform spot1;           // AmazingForest
+    public Transform spot2;           // GlowingMushroom
+    public Transform spot3;           // IslandInTheNight
 
-    // Called by the Start button
+    // Called when "Start" is pressed
     public void StartGame()
     {
         Debug.Log("Start button pressed");
@@ -22,16 +22,17 @@ public class MainMenuUI : MonoBehaviour
         if (checkInPanel != null) checkInPanel.SetActive(true);
     }
 
-    // Called by emotion buttons (Irritable, Unstable, etc.)
+    // Called when an emotion is selected
     public void OnEmotionSelected(string emotion)
     {
         Debug.Log("Selected Emotion: " + emotion);
         if (checkInPanel != null) checkInPanel.SetActive(false);
         if (recommendationPanel != null) recommendationPanel.SetActive(true);
-        PlayerPrefs.SetString("SelectedEmotion", emotion); // optional memory
+
+        PlayerPrefs.SetString("SelectedEmotion", emotion); // Optional save
     }
 
-    // Called by location buttons
+    // Called when a recommendation is selected
     public void OnRecommendationSelected(string location)
     {
         Debug.Log("Selected Location: " + location);
@@ -54,7 +55,6 @@ public class MainMenuUI : MonoBehaviour
         }
     }
 
-    // Handles the teleportation
     void TeleportTo(Transform target)
     {
         if (trackingSpace != null && target != null)
@@ -65,7 +65,7 @@ public class MainMenuUI : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Teleport failed: Missing trackingSpace or target transform");
+            Debug.LogWarning("Teleport failed: trackingSpace or target is null");
         }
     }
 }
