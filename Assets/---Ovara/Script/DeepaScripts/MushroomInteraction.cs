@@ -1,28 +1,26 @@
 
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using System.Collections;
 
 public class MushroomInteraction : MonoBehaviour
 {
     public Color nearColor = Color.blue;
-    public Color farColor = new Color(0.82f, 0.71f, 0.55f); // Tan color
+    public Color farColor = new Color(0.82f, 0.71f, 0.55f);
     public float detectionRange = 6f;
     private Renderer mushroomRenderer;
     private Transform player;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
-
     void Start()
     {
-        // Set up renderer for color change
         mushroomRenderer = GetComponentInChildren<Renderer>();
-        player = Camera.main.transform; // Assuming first-person player
+        player = Camera.main.transform;
 
-        // Set up grab interaction
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         if (grabInteractable != null)
         {
-            grabInteractable.selectExited.AddListener(OnPickedUp);
+            grabInteractable.selectExited.AddListener(OnGrabExit);
         }
         else
         {
@@ -32,14 +30,29 @@ public class MushroomInteraction : MonoBehaviour
 
     void Update()
     {
-        // Change color based on distance
         float distance = Vector3.Distance(transform.position, player.position);
         mushroomRenderer.material.color = (distance <= detectionRange) ? nearColor : farColor;
     }
 
-    void OnPickedUp(SelectExitEventArgs args)
+    void OnGrabExit(SelectExitEventArgs args)
     {
-        Destroy(gameObject); // Makes the mushroom disappear when picked
+        StartCoroutine(FadeAndDestroy());
+    }
+
+    IEnumerator FadeAndDestroy()
+    {
+        Material mat = mushroomRenderer.material;
+        Color color = mat.color;
+
+        for (float t = 0; t < 1; t += Time.deltaTime)
+        {
+            color.a = Mathf.Lerp(1, 0, t); // Gradually fade out
+            mat.color = color;
+            yield return null;
+        }
+
+        Destroy(gameObject); // Remove mushroom after fading
     }
 }
+
 
