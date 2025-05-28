@@ -36,21 +36,7 @@ public class MushroomInteraction : MonoBehaviour
 
     void OnGrabExit(SelectExitEventArgs args)
     {
-        StartCoroutine(FadeAndDestroy());
-    }
-
-    IEnumerator FadeAndDestroy()
-    {
-        Material mat = mushroomRenderer.material;
-        Color color = mat.color;
-
-        for (float t = 0; t < 1; t += Time.deltaTime)
-        {
-            color.a = Mathf.Lerp(1, 0, t); // Gradually fade out
-            mat.color = color;
-            yield return null;
-        }
-
+       
         Destroy(gameObject); // Remove mushroom after fading
     }
 }
