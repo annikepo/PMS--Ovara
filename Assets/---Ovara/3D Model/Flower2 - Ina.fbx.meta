@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Leaf
-    second: {fileID: 2100000, guid: f8ec42ffbe98e03498d992e0eafae5f5, type: 2}
+    second: {fileID: 2100000, guid: 61ea9d3a71b93f440a935092ed534759, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -18,12 +18,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stem
-    second: {fileID: 2100000, guid: a31130aa87d176541b6026017d47fb87, type: 2}
+    second: {fileID: 2100000, guid: 612b6219850e1004b915694bff9eb0f1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: grass
-    second: {fileID: 2100000, guid: 5ed5f22b791c9d84fa5046b1cc682bea, type: 2}
+    second: {fileID: 2100000, guid: 57cc6d723f203a341aeb129774c9aa2d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
