@@ -6,13 +6,24 @@ public class MainMenuUI : MonoBehaviour
     [Header("UI Panels")]
     public GameObject mainMenuPanel;
     public GameObject checkInPanel;
-    public GameObject recommendationPanel;
+    public GameObject recommendationPanel; // this can stay in isdkovara menu
 
     [Header("XR Teleport Targets")]
     public Transform trackingSpace;   // XR Origin or XR Rig
     public Transform spot1;           // AmazingForest
     public Transform spot2;           // GlowingMushroom
     public Transform spot3;           // IslandInTheNight
+
+    [Header("isdkovara Menu")]
+    public GameObject isdkovaraMenu;  // Set this to your isdkovara menu parent GameObject
+
+    void Start()
+    {
+        if (isdkovaraMenu != null)
+        {
+            isdkovaraMenu.SetActive(false); // Hide at start
+        }
+    }
 
     // Called when "Start" is pressed
     public void StartGame()
@@ -27,7 +38,11 @@ public class MainMenuUI : MonoBehaviour
     {
         Debug.Log("Selected Emotion: " + emotion);
         if (checkInPanel != null) checkInPanel.SetActive(false);
-        if (recommendationPanel != null) recommendationPanel.SetActive(true);
+
+        if (isdkovaraMenu != null)
+        {
+            isdkovaraMenu.SetActive(true); // Show isdkovara menu
+        }
 
         PlayerPrefs.SetString("SelectedEmotion", emotion); // Optional save
     }
@@ -55,6 +70,7 @@ public class MainMenuUI : MonoBehaviour
         }
     }
 
+    // Teleport user to a location
     void TeleportTo(Transform target)
     {
         if (trackingSpace != null && target != null)

@@ -1590,7 +1590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &52328665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1598,21 +1598,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52328664}
-  m_LocalRotation: {x: 0.21007308, y: -0.23505102, z: 0.052109558, w: 0.9475785}
-  m_LocalPosition: {x: 0, y: 0, z: 222.21263}
-  m_LocalScale: {x: 1.34, y: 1.34, z: 1.34}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.12304}
+  m_LocalScale: {x: 153.73796, y: 153.73796, z: 153.73796}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 143763233}
   - {fileID: 1435126743}
   - {fileID: 89908817}
   - {fileID: 1015572343}
-  m_Father: {fileID: 1845065527}
+  m_Father: {fileID: 3952856038184094147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -297.62897, y: 116.32377}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0019554, y: 0.05489}
+  m_SizeDelta: {x: 928.5, y: 493.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52328666
 MonoBehaviour:
@@ -3058,7 +3058,7 @@ Transform:
   m_GameObject: {fileID: 119810387}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68.8, y: 2.0219693, z: 55.6}
+  m_LocalPosition: {x: 68.8, y: 4.51, z: 55.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15509,7 +15509,7 @@ Transform:
   m_GameObject: {fileID: 677285979}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.5784692, z: -0, w: 0.8157043}
-  m_LocalPosition: {x: 68.33, y: 0, z: 54.98}
+  m_LocalPosition: {x: 68.33, y: 2.7, z: 54.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20846,7 +20846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.03396219, g: 0.03351363, b: 0.03351363, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -42228,7 +42228,6 @@ RectTransform:
   m_Children:
   - {fileID: 922663770}
   - {fileID: 1260824502}
-  - {fileID: 52328665}
   m_Father: {fileID: 119810388}
   m_LocalEulerAnglesHint: {x: 0, y: -62.137, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -65591,6 +65590,7 @@ Transform:
   m_Children:
   - {fileID: 2147464389277588051}
   - {fileID: 1617368578747879162}
+  - {fileID: 52328665}
   m_Father: {fileID: 119810388}
   m_LocalEulerAnglesHint: {x: 25, y: -90, z: 0}
 --- !u!114 &3960245765983607812
@@ -71560,10 +71560,10 @@ MonoBehaviour:
   _whenUnselected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3917729411167420241}
-        m_TargetAssemblyTypeName: ISDKSceneMenuManager, Oculus.Interaction.OVR.Samples
-        m_MethodName: ToggleMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1973567339}
+        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
+        m_MethodName: OnRecommendationSelected
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -81947,7 +81947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00044200037}
+  m_AnchoredPosition: {x: 0, y: -0.0000770169}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &7337879004698341504
@@ -82947,6 +82947,10 @@ PrefabInstance:
       propertyPath: checkInPanel
       value: 
       objectReference: {fileID: 1260824501}
+    - target: {fileID: 6022749096703580977, guid: 26cca87f9959d1f439648df102147c69, type: 3}
+      propertyPath: isdkovaraMenu
+      value: 
+      objectReference: {fileID: 3952856038184094146}
     - target: {fileID: 6022749096703580977, guid: 26cca87f9959d1f439648df102147c69, type: 3}
       propertyPath: mainMenuPanel
       value: 
@@ -86332,7 +86336,7 @@ MonoBehaviour:
   _objects: []
   _passThroughToggle: {fileID: 7216513736720634691}
   _layer: {fileID: 8175985809609655443}
-  _camera: {fileID: 0}
+  _camera: {fileID: 230722459}
 --- !u!114 &8175985809609655443
 MonoBehaviour:
   m_ObjectHideFlags: 0
