@@ -3,7 +3,57 @@ guid: e0e7c89bea152d34499b368ab50efc06
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boulette
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dirt
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf
+    second: {fileID: 2100000, guid: 61ea9d3a71b93f440a935092ed534759, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: POT
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Petale
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pistil
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sepale
+    second: {fileID: 2100000, guid: 612b6219850e1004b915694bff9eb0f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stick
+    second: {fileID: 2100000, guid: 61ea9d3a71b93f440a935092ed534759, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tigeBoulette
+    second: {fileID: 2100000, guid: d4e0f0754b7c9424880e212ceb4870e2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
