@@ -19,7 +19,7 @@ public class SCR_LocationToSpot : MonoBehaviour
     /// </summary>
     public void SetSpot1()
     {
-        transform.position = new Vector3(9.6f, 3.8f, 4.1f);
+        transform.position = new Vector3(-15.2f,3.0f,14.7f);
     }
 
     /// <summary>
@@ -27,7 +27,7 @@ public class SCR_LocationToSpot : MonoBehaviour
     /// </summary>
     public void SetSpot2()
     {
-        transform.position = new Vector3(-18.0f, 9.0f, -30.0f); // You can change these coordinates as needed
+        transform.position = new Vector3(10.9f,4.1f,-2.6f); // You can change these coordinates as needed
     }
 
     /// <summary>
@@ -35,6 +35,6 @@ public class SCR_LocationToSpot : MonoBehaviour
     /// </summary>
     public void SetSpot3()
     {
-        transform.position = new Vector3(5.0f, 4.1f, 13.9f); // You can change these coordinates as needed
+        transform.position = new Vector3(32.8f,3.0f,17.9f); // You can change these coordinates as needed
     }
 }
